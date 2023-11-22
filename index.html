@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenDen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Responsive Navbar     -->
+    <nav class="bg-green-100 p-3 flex align-center justify-between shadow-xl sticky top-0 z-10">
+        <a href="./index.html"><h1 class="text-2xl">GREENDEN</h1></a> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <a href="./index.html"><Li class="hover:underline hover:text-black">Home</Li></a>
+            <a href="./Products.html"><Li class="hover:underline hover:text-black">Products</Li></a>
+            <a href="./Contact.html"><Li class="hover:underline hover:text-black">Contacts</Li></a>
+        </ul>
+    </nav>
+    <!-- header -->
+    <div class="flex justify-center bg-green-100">
+        <section class=" p-4">
+            <p class="mb-4">We offer you a wide range oof artificial and natural flowers</p>
+            <h2 class="font-bold text-3xl mb-4">Plants for your interior</h2>
+            <div class="mb-4">
+                <button class="bg-black rounded p-2 text-white">Shop Now</button>
+                <button class="border border-black rounded p-2">Watch Video</button>
+            </div>
+            <p>160+ Plant Species | 100+ Clients</p>
+        </section>
+        <img class="hidden md:block p-5" src="./images/header_image.jpg" alt="header_image" width="300px">
+    </div>
+    <!-- About -->
+    <section class="text-center mt-5">
+        <h1 class="text-3xl font-bold">About Us</h1>
+        <p>This site for those who admire the beaauty and harmony of nature</p>
+        <div class="md:flex ">
+            <div class="border border-black p-2 m-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                </svg>
+                <h4 class="text-xl font-medium">Large Assortment</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur reiciendis aut velit, ab unde
+                    iste.</p>
+            </div>
+            <div class="border border-black p-2 m-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+                <h4 class="text-xl font-medium">Free and Fast Shipping</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur reiciendis aut velit, ab unde
+                    iste.</p>
+            </div>
+            <div class="border border-black p-2 m-6 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                </svg>
+                <h4 class="text-xl font-medium">24/7 Spport</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipis hover:shadow-xlicing elit. Aspernatur reiciendis aut velit, ab unde
+                    iste.</p>
+            </div>
+        </div>
+    </section>
+    <!-- best sellers -->
+    <section class="p-4 text-center">
+        <h1 class="font-bold text-3xl mt-5">Best sellers</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div class="">
+                <img src="./images/bs_1.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="">
+                <img src="./images/bs_2.jpg" alt=""  class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="">
+                <img src="./images/bs_3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="">
+                <img src="./images/bs_4.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+        </div>
+    </section>
+    <!-- Cstomer review -->
+    <section class="mt-5">
+        <h1 class="text-3xl font-bold text-center">Customer Reviews</h1>
+        <div class="m-5 p-5 bg-green-800 text-white">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, fugit pariatur! Quod ea amet quasi nemo sit dolorum suscipit odit, aperiam dolor quos dolore ut commodi nesciunt doloremque nam at.</p>
+            <p class="text-yellow-500">Glenn Mark</p>
+        </div>
+        <div class="m-5 p-5 bg-green-800 text-white">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, fugit pariatur! Quod ea amet quasi nemo sit dolorum suscipit odit, aperiam dolor quos dolore ut commodi nesciunt doloremque nam at.</p>
+            <p class="text-yellow-500">Glenn Mark</p>
+        </div>
+        <div class="m-5 p-5 bg-green-800 text-white">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, fugit pariatur! Quod ea amet quasi nemo sit dolorum suscipit odit, aperiam dolor quos dolore ut commodi nesciunt doloremque nam at.</p>
+            <p class="text-yellow-500">Glenn Mark</p>
+        </div>
+    </section>
+    <!-- Join our New Letter -->
+    <section class="mt-5 text-center mb-5">
+        <h1 class="font-bold text-3xl mt-5">Join our New Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input class="border border-black w-4/5 mt-3" type="text"><br>
+        <button class="bg-black hover:bg-black text-white font-bold py-2 px-4 mt-5 rounded underline">Subscribe</button>
+    </section>
+    <!-- footnote -->
+    <footer class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-3xl font-bold">Greenden</h1>
+        <p>The Standard chunk of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, neque.</p>
+        <p>&copy; 2021 Greenday.com</p>
+    </footer>
+</body>
+
+</ht
