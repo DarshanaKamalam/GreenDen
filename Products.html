@@ -11,7 +11,7 @@
      <!-- Responsive Navbar     -->
      <nav class="bg-green-100 p-3 flex align-center justify-between shadow-xl sticky top-0 z-10">
         <a href="./index.html"><h1 class="text-2xl">GREENDEN</h1></a> 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -21,10 +21,21 @@
             <a href="./Contact.html"><Li class="hover:underline hover:text-black">Contacts</Li></a>
         </ul>
     </nav>
+        <!-- side navbar -->
+        <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh;  right:-50%;">
+            <div class="text-right p-5">
+                <p id="closenav" class="inline cursor-pointer">X</p>
+            </div>
+            <ul class="flex flex-col gap-10 items-center text-gray-600">
+                <a href="./index.html"><Li class="hover:underline hover:text-black">Home</Li></a>
+                <a href="./Products.html"><Li class="hover:underline hover:text-black">Products</Li></a>
+                <a href="./Contact.html"><Li class="hover:underline hover:text-black">Contacts</Li></a>
+            </ul>
+        </section>
     <section class="p-4 text-center">
         <h1 class="text-2xl font-bold mt-5 mb-5">Our Products</h1>
-        <input class="border border-black mb-5 p-1 w-4/5" type="search" placeholder="Search for a Product...">
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+        <input id="search" class="border border-black mb-5 p-1 w-4/5" type="search" placeholder="Search for a Product...">
+        <div class="productContainer grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
             <div class="">
                 <img src="./images/bs_1.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <h1>Rose Plant</h1>
@@ -32,36 +43,36 @@
             </div>
             <div class="">
                 <img src="./images/bs_2.jpg" alt=""  class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Rose Plant</h1>
+                <h1>Lily Plant</h1>
                 <p>$20</p>
             </div>
             <div class="">
                 <img src="./images/bs_3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Rose Plant</h1>
+                <h1>Petunia Plant</h1>
                 <p>$20</p>
             </div>
             <div class="">
                 <img src="./images/bs_4.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Rose Plant</h1>
+                <h1>Lotus Plant</h1>
                 <p>$20</p>
             </div>
-        </div>
+        <!-- </div>
     </section>
         <section class="text-center">
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 mb-5">
+        <div class="productContainer grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 mb-5"> -->
             <div class="">
                 <img src="./images/bs_1.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Rose Plant</h1>
+                <h1>Cactus Plant</h1>
                 <p>$20</p>
             </div>
             <div class="">
                 <img src="./images/bs_2.jpg" alt=""  class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Rose Plant</h1>
+                <h1>Money Plant</h1>
                 <p>$20</p>
             </div>
             <div class="">
                 <img src="./images/bs_3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-                <h1>Rose Plant</h1>
+                <h1>Dates Plant</h1>
                 <p>$20</p>
             </div>
             <div class="">
@@ -77,5 +88,6 @@
         <p>The Standard chunk of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, neque.</p>
         <p>&copy; 2021 Greenday.com</p>
     </footer>
+    <script src="./Products.js"></script>
 </body>
 </html>
